@@ -13,7 +13,7 @@ docker buildx create --use --name buildkit
 
 ## Build
 
-Build a [multi-platform image][docker-multiplatform]:
+Build a local image:
 
 ```sh
 docker buildx build --tag quay.io/bitski/oathkeeper:latest --load .
