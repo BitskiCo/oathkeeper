@@ -6,7 +6,8 @@ target "defaults" {
   context = "."
   dockerfile = "Dockerfile"
   tags = [
-    "quay.io/bitski/oathkeeper:latest"
+    "quay.io/bitski/oathkeeper:latest",
+    "quay.io/bitski/oathkeeper:v0.40.0"
   ]
 }
 
