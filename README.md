@@ -16,7 +16,7 @@ docker buildx create --use --name buildkit
 Build a local image:
 
 ```sh
-docker buildx build --tag quay.io/bitski/oathkeeper:latest --load .
+docker buildx bake --load local
 ```
 
 ## Startup Test
@@ -38,10 +38,7 @@ docker login quay.io
 Then build and publish a [multi-platform image][docker-multiplatform]:
 
 ```sh
-docker buildx build \
-  --platform linux/amd64,linux/arm64 \
-  --tag quay.io/bitski/oathkeeper:latest \
-  --push .
+docker buildx bake --push
 ```
 
 [buildkit]: https://github.com/moby/buildkit
